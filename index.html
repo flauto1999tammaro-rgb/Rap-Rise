@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<title>RapRise • Simone Officiale</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+
+
+&lt;!-- Step 28: multi-file build (app.css + app.js) --&gt;
+<meta content="step41; css=0966e83683; js=148dc7236c" name="raprise-build"/><meta content="#f97316" name="theme-color"/><link href="./manifest.webmanifest" rel="manifest"/><link href="./icons/icon-192x192.png" rel="apple-touch-icon"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="RapRise" name="apple-mobile-web-app-title"/><meta content="yes" name="mobile-web-app-capable"/><meta content="RapRise" property="og:title"/><meta content="RapRise - rapper career game (PWA)." property="og:description"/><meta content="website" property="og:type"/><link href="./splash/splash-1290x2796.png" media="(orientation: portrait) and (min-device-width: 1290px) and (max-device-width: 1290px) and (min-device-height: 2796px) and (max-device-height: 2796px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1179x2556.png" media="(orientation: portrait) and (min-device-width: 1179px) and (max-device-width: 1179px) and (min-device-height: 2556px) and (max-device-height: 2556px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1170x2532.png" media="(orientation: portrait) and (min-device-width: 1170px) and (max-device-width: 1170px) and (min-device-height: 2532px) and (max-device-height: 2532px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1125x2436.png" media="(orientation: portrait) and (min-device-width: 1125px) and (max-device-width: 1125px) and (min-device-height: 2436px) and (max-device-height: 2436px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1242x2688.png" media="(orientation: portrait) and (min-device-width: 1242px) and (max-device-width: 1242px) and (min-device-height: 2688px) and (max-device-height: 2688px)" rel="apple-touch-startup-image"/><link href="./splash/splash-828x1792.png" media="(orientation: portrait) and (min-device-width: 828px) and (max-device-width: 828px) and (min-device-height: 1792px) and (max-device-height: 1792px)" rel="apple-touch-startup-image"/><link href="./splash/splash-750x1334.png" media="(orientation: portrait) and (min-device-width: 750px) and (max-device-width: 750px) and (min-device-height: 1334px) and (max-device-height: 1334px)" rel="apple-touch-startup-image"/><link href="./splash/splash-640x1136.png" media="(orientation: portrait) and (min-device-width: 640px) and (max-device-width: 640px) and (min-device-height: 1136px) and (max-device-height: 1136px)" rel="apple-touch-startup-image"/><link href="./splash/splash-2048x2732.png" media="(orientation: portrait) and (min-device-width: 2048px) and (max-device-width: 2048px) and (min-device-height: 2732px) and (max-device-height: 2732px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1668x2388.png" media="(orientation: portrait) and (min-device-width: 1668px) and (max-device-width: 1668px) and (min-device-height: 2388px) and (max-device-height: 2388px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1668x2224.png" media="(orientation: portrait) and (min-device-width: 1668px) and (max-device-width: 1668px) and (min-device-height: 2224px) and (max-device-height: 2224px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1536x2048.png" media="(orientation: portrait) and (min-device-width: 1536px) and (max-device-width: 1536px) and (min-device-height: 2048px) and (max-device-height: 2048px)" rel="apple-touch-startup-image"/><link href="./splash/splash-1170x2532.png" media="(orientation: portrait)" rel="apple-touch-startup-image"/><link as="style" crossorigin="anonymous" href="app.0966e83683.css" integrity="sha384-oVw5oRj5qYzwwngFakhYLd2w5XkDTM04a8Zy8zQMtwBK3M4PrLqoaxB3wF8K8WSC" rel="preload"/><link crossorigin="anonymous" href="app.0966e83683.css" integrity="sha384-oVw5oRj5qYzwwngFakhYLd2w5XkDTM04a8Zy8zQMtwBK3M4PrLqoaxB3wF8K8WSC" rel="stylesheet"/><link as="script" crossorigin="anonymous" href="app.148dc7236c.js" integrity="sha384-ochpanvI8IHmY/iLb47rBsU2Un8qPmpbfEJsnU1rLlwjtnWZbtYtzfB+JXkAHSRv" rel="preload"/></head>
+<body>
+<a class="visually-hidden" href="#screenRoot" id="skipToContent">Salta al contenuto</a>
+<!-- =========================
+     STEP12: SVG Icon Sprite
+     ========================= -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<symbol id="i-shop" viewbox="0 0 24 24">
+<path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.16 14h9.93c.75 0 1.41-.41 1.75-1.03L22 6H6.21L5.27 4H2v2h2l3.6 7.59-1.35 2.44C5.52 17.37 6.48 19 8 19h12v-2H8l1.16-2.1Z" fill="currentColor"></path>
+</symbol>
+<symbol id="i-x" viewbox="0 0 24 24">
+<path d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.29 9.17 12 2.88 5.71 4.29 4.29l6.3 6.3 6.3-6.3z" fill="currentColor"></path>
+</symbol>
+<symbol id="i-bolt" viewbox="0 0 24 24">
+<path d="M11 21h-1l1-7H7l6-13h1l-1 7h4z" fill="currentColor"></path>
+</symbol>
+<symbol id="i-gift" viewbox="0 0 24 24">
+<path d="M20 7h-1.18A3 3 0 0 0 14 4a2.99 2.99 0 0 0-2 0A3 3 0 0 0 7.18 7H6a2 2 0 0 0-2 2v3h8V7h-1.5a1.5 1.5 0 1 1 0-3A1.5 1.5 0 0 1 12 5.5 1.5 1.5 0 1 1 13.5 4 1.5 1.5 0 1 1 12 5.5V12h8V9a2 2 0 0 0-2-2Zm0 7h-8v8h6a2 2 0 0 0 2-2v-6ZM4 14v6a2 2 0 0 0 2 2h6v-8H4Z" fill="currentColor"></path>
+</symbol>
+</svg>
+<!-- =========================
+     STEP20A: App Root + Screens
+     ========================= -->
+<div id="appRoot">
+<div class="screen-root" id="screenRoot">
+<section class="screen active" id="screen-home"><section class="hub-hero ui-card" id="homeHero">
+<div class="hero-top">
+<div style="min-width:0;">
+<div class="hero-title">Hub principale</div>
+<div class="hero-sub">Eventi, progress e modalita principali. CTA grandi e ritmo da mobile game.</div>
+</div>
+<div class="hero-pill" id="dailyPill"><i></i><span>Daily Deals attivi</span></div>
+</div>
+<div class="hero-cta">
+<button class="btn btn-primary" id="ctaOpenChest">
+<svg><use href="#i-gift"></use></svg><span>Apri cassa</span>
+</button>
+<button class="btn btn-secondary" id="ctaOpenShop">
+<svg><use href="#i-shop"></use></svg><span>Vai al negozio</span>
+</button>
+</div>
+</section><section class="hub-strip ui-card" id="modeStrip">
+<div class="strip-head">
+<b>Modalita</b>
+<span>azioni veloci</span>
+</div>
+<div class="mode-row">
+<div class="mode-card">
+<div class="t"><b>Studio</b><span class="chip"><i></i>XP</span></div>
+<div class="d">Scrivi barre, fai progress e sblocca livelli.</div>
+<div class="a"><button class="btn btn-primary" data-action="focus-write">Vai</button></div>
+</div>
+<div class="mode-card">
+<div class="t"><b>Social</b><span class="chip"><i></i>Fan</span></div>
+<div class="d">Cresci su Instagram e sblocca ricompense.</div>
+<div class="a"><button class="btn btn-secondary" data-action="open-phone">Apri</button></div>
+</div>
+<div class="mode-card">
+<div class="t"><b>Stagione</b><span class="chip"><i></i>Pass</span></div>
+<div class="d">Tier, ricompense e milestone. Ritmo live-ops.</div>
+<div class="a"><button class="btn btn-secondary" data-action="open-season">Apri</button></div>
+</div>
+<div class="mode-card">
+<div class="t"><b>Missioni</b><span class="chip"><i></i>Quest</span></div>
+<div class="d">Questline e claim ricompense.</div>
+<div class="a"><button class="btn btn-secondary" data-action="open-quests">Apri</button></div>
+</div>
+</div>
+</section><section class="card" id="statsCard">
+<div class="row">
+<div>
+<div class="stat-label">Rapper</div>
+<div class="stat-main" id="rapperName">Lil Demo</div>
+<div class="chip">
+<div class="dot"></div>
+<span id="genreLabel">Trap • Street Kid</span>
+</div>
+</div>
+<div class="kpi">
+<div class="kpi-label">Rival</div>
+<div class="kpi-value" id="rivalName">GhostKid</div>
+</div>
+</div>
+<div class="kpi-grid">
+<div class="kpi">
+<div class="kpi-label">Fan</div>
+<div class="kpi-value" id="fansValue">0</div>
+</div>
+<div class="kpi">
+<div class="kpi-label">Soldi</div>
+<div class="kpi-value" id="moneyValue">$ 2.000</div>
+</div>
+<div class="kpi">
+<div class="kpi-label">Hype</div>
+<div class="kpi-value accent" id="hypeValue">10</div>
+</div>
+</div>
+<div class="time">
+<div>Tempo: <strong id="timeLabel">Giorno 1 • Settimana 1 • Anno 2025</strong></div>
+<div style="font-size:0.74rem;">Clima carriera: <span id="careerMood">Sconosciuto totale</span></div>
+</div>
+<div class="skills">
+<div class="skill-row">
+<div class="skill-label"><span>Flow</span><span id="flowVal">50</span></div>
+<div class="skill-bar"><div class="skill-fill" id="flowFill"></div></div>
+</div>
+<div class="skill-row">
+<div class="skill-label"><span>Writing</span><span id="writingVal">50</span></div>
+<div class="skill-bar"><div class="skill-fill" id="writingFill"></div></div>
+</div>
+<div class="skill-row">
+<div class="skill-label"><span>Stage</span><span id="stageVal">50</span></div>
+<div class="skill-bar"><div class="skill-fill" id="stageFill"></div></div>
+</div>
+<div class="skill-row">
+<div class="skill-label"><span>Social</span><span id="socialVal">50</span></div>
+<div class="skill-bar"><div class="skill-fill" id="socialFill"></div></div>
+</div>
+</div>
+<div class="missions">
+<div class="missions-header">
+<span>Obiettivi giornalieri</span>
+<span id="missionsWeek">Settimana 1</span>
+</div>
+<div id="missionsList"></div>
+</div>
+</section></section>
+<section class="screen" id="screen-studio"><section class="ui-card screen-actions"><div class="screen-head"><div style="min-width:0;"><div class="ttl">Studio</div><div class="sub">Scrittura, progress e upgrade rapidi.</div></div></div><div class="u-row u-gap-2" style="flex-wrap:wrap;margin-top:10px;"><button class="btn btn-primary" id="studioFocusBtn" type="button">Scrivi</button><button class="btn btn-secondary" id="studioChestBtn" type="button">Apri cassa</button><button class="btn btn-secondary" id="studioShopBtn" type="button">Negozio</button><button class="btn btn-secondary" id="studioWeeklyBtn" type="button">Quest settimanali</button></div></section><div class="overlay hidden" id="composerOverlay">
+<div class="overlay-card">
+<div class="overlay-header">
+<div class="overlay-title">Nuovo singolo</div>
+<button class="overlay-close" id="composerCloseBtn">✕</button>
+</div>
+<div class="overlay-row"><span>Come vuoi creare il pezzo?</span></div>
+<div class="overlay-row">
+<label style="font-size:0.78rem;">Modalità testo</label>
+<div class="overlay-actions" style="margin-top:2px;">
+<button class="ghost" id="modeLyricsBtn">📝 Scrivo io il testo</button>
+<button class="ghost" id="modeBeatBtn">🎶 Solo beat (strumentale)</button>
+</div>
+</div>
+<div class="overlay-row">
+<label for="featSelect" style="font-size:0.78rem;">Feat. artista del momento (opzionale)</label>
+<select id="featSelect">
+<option value="">Nessun feat (gratis)</option>
+<option value="GhostKid|5000|1.4">GhostKid – $5.000</option>
+<option value="Mattia Porciello|8000|1.7">Mattia Porciello (Ollare) – $8.000</option>
+<option value="Simone Tammaro|8000|1.7">Simone Tammaro (Ollare) – $8.000</option>
+<option value="Federico Ferrante|8000|1.7">Federico Ferrante (Ollare) – $8.000</option>
+<option value="Simone Sorrentino|8000|1.7">Simone Sorrentino (Ollare) – $8.000</option>
+<option value="Pasquale Ruggieri|8000|1.7">Pasquale Ruggieri (Ollare) – $8.000</option>
+<option value="Emanuele Scala|8000|1.7">Emanuele Scala (Ollare) – $8.000</option>
+<option value="Carmine De Benedetto|8000|1.7">Carmine De Benedetto (Ollare) – $8.000</option>
+<option value="Michele Facente|8000|1.7">Michele Facente (Ollare) – $8.000</option>
+<option value="Carmine Fasano|8000|1.7">Carmine Fasano (Ollare) – $8.000</option>
+<option value="Glauco Ciani|8000|1.7">Glauco Ciani (Ollare) – $8.000</option>
+</select>
+</div>
+<div class="overlay-row" id="lyricsRow" style="display:none;">
+<label for="lyricsInput" style="font-size:0.78rem;">Testo del brano (facoltativo, ma consigliato)</label>
+<textarea id="lyricsInput" placeholder="Scrivi qui le barre del pezzo..."></textarea>
+</div>
+<div class="overlay-actions">
+<button class="secondary" id="composerCancelBtn" style="flex:1;">Annulla</button>
+<button id="composerConfirmBtn" style="flex:1;">Pubblica singolo</button>
+</div>
+</div>
+</div></section>
+<section class="screen" id="screen-social"><section class="ui-card screen-actions"><div class="screen-head"><div style="min-width:0;"><div class="ttl">Social</div><div class="sub">Canali social e crescita fan.</div></div></div><div class="u-row u-gap-2" style="flex-wrap:wrap;margin-top:10px;"><button class="btn btn-primary" id="socialInstaBtn" type="button">Instagram</button><button class="btn btn-secondary" id="socialSpotifyBtn" type="button">Spotify</button><button class="btn btn-secondary" id="socialHomeBtn" type="button">Home</button></div></section><div aria-hidden="false" class="social-panel" id="phoneOverlay">
+<div class="ui-card social-shell" role="region">
+<div class="screen-head"><div><div class="ttl">Social</div><div class="sub">Instagram, Spotify e crescita fan (senza telefono).</div></div></div>
+<div class="phone-screen">
+<div class="phone-pages" id="phonePages">
+<!-- HOME -->
+<section class="phone-page active" data-page="home">
+<div class="phone-app-header">
+<div class="left">
+<div class="title">Home</div>
+</div>
+<div class="chip" id="phoneHomeHelp">?</div>
+</div>
+<div class="phone-app-body">
+<div class="phone-bar">
+<div class="left">
+<span class="phone-pill" id="phonePillFans">Fan: 0</span>
+<span class="phone-pill" id="phonePillHype">Hype: 10</span>
+</div>
+</div>
+<div class="phone-app-grid">
+<div class="phone-app-tile" data-open="instagram">
+<div>
+<div class="name">Instagram</div>
+<div class="muted">Feed + profili</div>
+</div>
+<div>📸</div>
+</div>
+<div class="phone-app-tile" data-open="spotify">
+<div>
+<div class="name">Spotify</div>
+<div class="muted">Top 100</div>
+</div>
+<div>🎵</div>
+</div>
+<div class="phone-app-tile" data-open="youtube">
+<div>
+<div class="name">YouTube</div>
+<div class="muted">Video + upload</div>
+</div>
+<div>📺</div>
+</div>
+<div class="phone-app-tile" data-open="live">
+<div>
+<div class="name">Live</div>
+<div class="muted">Rischio/ricompensa</div>
+</div>
+<div>🔴</div>
+</div>
+</div>
+<div style="margin-top:12px;color:var(--muted);font-size:0.78rem;">
+              Suggerimento: Instagram/YouTube = crescita costante; Live = spike rischio/ricompensa.
+            </div>
+</div>
+</section>
+<!-- INSTAGRAM -->
+<section class="phone-page" data-page="instagram">
+<div class="phone-app-header">
+<div class="left">
+<button class="chip" data-back="" type="button">←</button>
+<div class="title">Instagram</div>
+</div>
+<div class="chip">Feed pulito</div>
+</div>
+<div class="phone-app-body" id="appInstagram">
+<div class="ig-profile">
+<div class="ig-avatar" id="igAvatar">LS</div>
+<div class="ig-meta">
+<div id="igHandle" style="font-weight:800;">@lilsimone</div>
+<div class="ig-stats">
+<span><strong id="igPostsCount">0</strong> post</span>
+<span><strong id="igFollowers">0</strong> follower</span>
+<span><strong id="igFollowing">11</strong> seguiti</span>
+</div>
+</div>
+</div>
+<div class="ig-upload">
+<input accept="image/*" id="igFile" type="file"/>
+</div>
+<div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
+<input id="igCaption" placeholder="Scrivi una caption (opzionale)..." type="text"/>
+<button id="igPostBtn" type="button">Pubblica</button>
+</div>
+<div class="sp-card" style="margin-bottom:10px;">
+<div style="color:var(--muted);font-size:0.78rem;">
+                Pubblicare su Instagram aumenta lentamente fan e Social. Le foto restano locali (simulazione).
+              </div>
+</div>
+<div class="sp-card" style="margin-bottom:10px;">
+<div style="display:flex; gap:8px; align-items:center;">
+<input id="igSearchInput" placeholder="Cerca profilo (es. Mattia Porciello)..." type="text"/>
+<button id="igSearchBtn" type="button">Cerca</button>
+</div>
+<div id="igSearchResults" style="margin-top:10px; display:flex; flex-direction:column; gap:8px;"></div>
+</div>
+<!-- ADMIN: FOTO PROFILO PERSONAGGI (D1) -->
+<div class="sp-card" style="margin-bottom:10px;">
+<div style="display:flex; justify-content:space-between; align-items:center;">
+<div style="font-weight:900;">Admin - Foto profilo personaggi</div>
+<button class="ghost" id="igAdminToggleBtn" type="button">Mostra/Nascondi</button>
+</div>
+<div class="hidden" id="igAdminPanel" style="margin-top:10px; display:flex; flex-direction:column; gap:10px;"></div>
+<div style="margin-top:8px;color:var(--muted);font-size:0.76rem;">
+    Carica qui le foto profilo dei 10 personaggi. Restano salvate sul tuo browser.
+  </div>
+</div>
+<div class="ig-grid" id="igGrid"></div>
+<div class="overlay hidden" id="igProfileOverlay">
+<div class="overlay-card" style="max-width:560px;">
+<div class="reward-burst" id="rewardBurst"></div>
+<div class="overlay-header">
+<div class="overlay-title" id="igProfileTitle">Profilo</div>
+<button class="overlay-close" id="igProfileCloseBtn">✕</button>
+</div>
+<div class="ig-profile" style="margin-bottom:12px;">
+<div class="ig-avatar" id="igProfileAvatar">AA</div>
+<div class="ig-meta">
+<div id="igProfileHandle" style="font-weight:900;">@user</div>
+<div class="ig-stats">
+<span><strong id="igProfilePosts">0</strong> post</span>
+<span><strong id="igProfileFollowers">0</strong> follower</span>
+<span><strong id="igProfileFollowing">0</strong> seguiti</span>
+</div>
+</div>
+</div>
+<div class="ig-grid" id="igProfileGrid"></div>
+</div>
+</div>
+<!-- IG Post Modal -->
+<div class="overlay hidden" id="igPostOverlay">
+<!-- IG Profile Modal -->
+<div class="overlay-card" style="max-width:520px;">
+<div class="overlay-header">
+<div class="overlay-title" id="igPostTitle">Post</div>
+<button class="overlay-close" id="igPostCloseBtn">✕</button>
+</div>
+<div style="border-radius:14px; overflow:hidden; border:1px solid rgba(51,65,85,.85);">
+<img alt="post" id="igPostImage" src="" style="width:100%; display:block; max-height:320px; object-fit:cover;"/>
+</div>
+<div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+<div style="display:flex; align-items:center; gap:10px;">
+<div id="igPostOwnerAvatar" style="width:34px;height:34px;border-radius:999px;overflow:hidden;border:1px solid rgba(51,65,85,.85);background:rgba(2,6,23,.35);display:flex;align-items:center;justify-content:center;font-weight:900;">
+    RS
+  </div>
+<div id="igPostOwner" style="font-weight:900;">@user</div>
+</div>
+<div style="display:flex; gap:10px; color:var(--muted); font-size:.82rem;">
+<button class="ghost" id="igLikeBtn" type="button">❤ Like</button>
+<span>❤ <strong id="igPostLikes">0</strong></span>
+<button class="ghost" id="igToggleCommentsBtn" title="Mostra/Nascondi commenti" type="button">
+  💬 <strong id="igPostCommentsCount">0</strong>
+</button>
+</div>
+</div>
+<div id="igPostCaption" style="margin-top:8px; color:var(--text); font-size:.86rem;"></div>
+<div class="sp-card" style="margin-top:10px;">
+<div style="display:flex; gap:8px; align-items:center;">
+<input id="igCommentInput" placeholder="Aggiungi un commento..." type="text"/>
+<button id="igCommentBtn" type="button">Invia</button>
+</div>
+<div class="hidden" id="igCommentsPanel" style="margin-top:10px;">
+<div id="igCommentsList" style="max-height:220px; overflow:auto; display:flex; flex-direction:column; gap:6px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SPOTIFY -->
+<section class="phone-page" data-page="spotify">
+<div class="phone-app-header">
+<div class="left">
+<button class="chip" data-back="" type="button">←</button>
+<div class="title">Spotify</div>
+</div>
+<div class="chip">Top 100</div>
+</div>
+<div class="phone-app-body" id="appSpotify">
+<div class="sp-card">
+<div class="sp-title">
+<strong><span class="sp-dot"></span> Top Global 100</strong>
+<small style="color:var(--muted);">Aggiornamento giornaliero</small>
+</div>
+<div class="sp-list" id="spotifyList"></div>
+</div>
+</div>
+</section>
+<!-- YOUTUBE -->
+<section class="phone-page" data-page="youtube">
+<div class="phone-app-header">
+<div class="left">
+<button class="chip" data-back="" type="button">←</button>
+<div class="title">YouTube</div>
+</div>
+<div class="chip">Views</div>
+</div>
+<div class="phone-app-body" id="appYouTube">
+<div class="yt-card">
+<div style="display:flex;flex-direction:column; gap:8px;">
+<select id="ytSongSelect"></select>
+<input accept="image/*" id="ytCoverFile" type="file"/>
+<div style="display:flex;gap:8px;align-items:center;">
+<input id="ytTitle" placeholder="Titolo video (es. Official Video)" type="text"/>
+<button id="ytPublishBtn" type="button">Carica</button>
+</div>
+</div>
+<div style="margin-top:8px;color:var(--muted);font-size:0.78rem;">
+                YouTube cresce più lentamente, ma nel lungo periodo può diventare enorme.
+              </div>
+</div>
+<div class="yt-list" id="ytList"></div>
+</div>
+</section>
+<!-- LIVE -->
+<section class="phone-page" data-page="live">
+<div class="phone-app-header">
+<div class="left">
+<button class="chip" data-back="" type="button">←</button>
+<div class="title">Instagram Live</div>
+</div>
+<div class="chip">rischio/ricompensa</div>
+</div>
+<div class="phone-app-body" id="appLive">
+<div class="sp-card">
+<div style="display:flex;gap:8px;align-items:center;">
+<button id="liveStartBtn" type="button">Avvia Live</button>
+<button id="liveQABtn" type="button">Q&amp;A</button>
+<button id="liveFreestyleBtn" type="button">Freestyle</button>
+</div>
+<div style="margin-top:8px;color:var(--muted);font-size:0.78rem;">
+                Le live consumano hype. Se va bene, boost enorme. Se va male, ti massacrano nei meme.
+              </div>
+</div>
+<div class="yt-card" id="liveLog" style="min-height:120px;">
+<strong>Log Live</strong>
+<div id="liveLogText" style="margin-top:6px;color:var(--muted);font-size:0.8rem;">Nessuna live oggi.</div>
+<div class="overlay hidden" id="liveOverlay">
+<div class="overlay-card" style="max-width:520px;">
+<div class="overlay-header">
+<div class="overlay-title">Instagram Live</div>
+<button class="overlay-close" id="liveOverlayCloseBtn">✕</button>
+</div>
+<div style="position:relative; border-radius:14px; overflow:hidden; border:1px solid rgba(51,65,85,.85);">
+<img alt="live" id="liveHero" src="" style="width:100%; display:block; max-height:320px; object-fit:cover;"/>
+<div style="position:absolute; top:10px; right:10px; background:rgba(2,6,23,.75); border:1px solid rgba(51,65,85,.85); padding:6px 10px; border-radius:999px; font-weight:800;">
+        👁 <span id="liveViewers">0</span>
+</div>
+<div style="position:absolute; top:10px; left:10px; background:rgba(220,38,38,.85); padding:6px 10px; border-radius:999px; font-weight:900;">
+        LIVE
+      </div>
+</div>
+<div class="sp-card" style="margin-top:10px;">
+<div style="font-weight:800; margin-bottom:8px;">Chat</div>
+<div id="liveChat" style="max-height:220px; overflow:auto; display:flex; flex-direction:column; gap:6px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Bottom Nav (sempre in basso, NON dentro <style>) -->
+<div class="phone-bottom-nav" id="phoneBottomNav">
+<button class="pnav active" data-app="home" type="button">🏠<span>Home</span></button>
+<button class="pnav" data-app="instagram" type="button">📸<span>IG</span></button>
+<button class="pnav" data-app="spotify" type="button">🎵<span>Spotify</span></button>
+<button class="pnav" data-app="youtube" type="button">📺<span>YouTube</span></button>
+<button class="pnav" data-app="live" type="button">🔴<span>Live</span></button>
+</div>
+</div>
+</div></section>
+<section class="screen" id="screen-season"><section class="ui-card screen-actions"><div class="screen-head"><div style="min-width:0;"><div class="ttl">Stagione</div><div class="sub">Quest, pass e ricompense live ops.</div></div></div><div class="u-row u-gap-2" style="flex-wrap:wrap;margin-top:10px;"><button class="btn btn-primary" id="seasonWeeklyBtn" type="button">Apri quest</button><button class="btn btn-secondary" id="seasonClaimBtn" type="button">Notifiche</button><button class="btn btn-secondary" id="seasonShopBtn" type="button">Negozio</button></div></section><section class="season-card" id="seasonCard">
+<div class="season-head">
+<div class="left">
+<div class="season-title">Season Pass</div>
+<div class="season-sub" id="seasonSub">Ottieni punti stagione completando azioni e quest.</div>
+</div>
+<div class="season-tier" id="seasonTierLabel">Tier 1</div>
+</div>
+<div aria-label="Progresso Season Pass" class="season-bar">
+<div class="season-fill" id="seasonFill"></div>
+</div>
+<div class="chest-meter">
+<b>Cassa</b>
+<div aria-label="Progresso Cassa" class="chest-mini"><i id="chestFill"></i></div>
+<span id="chestLabel">0/100</span>
+</div>
+<div class="season-markers" id="seasonTiers"></div>
+</section></section>
+<section class="screen" id="screen-shop"><section class="ui-card screen-actions"><div class="screen-head"><div style="min-width:0;"><div class="ttl">Negozio</div><div class="sub">Daily deals, bundle e boost.</div></div></div><div class="u-row u-gap-2" style="flex-wrap:wrap;margin-top:10px;"><button class="btn btn-primary" id="shopOpenBtn" type="button">Apri negozio</button><button class="btn btn-secondary" id="shopHomeBtn" type="button">Home</button></div></section></section>
+<section aria-label="Release Notes" class="screen" data-mounted="0" id="screen-notes">
+<!-- filled by Step34 -->
+</section>
+</div>
+<nav aria-label="Navigazione" class="bottom-nav" id="bottomNav">
+<button aria-label="Home" class="active" data-screen="home">
+<div class="lab">
+<svg><use href="#i-shop"></use></svg>
+<span>Home</span>
+</div>
+</button>
+<button aria-label="Studio" data-screen="studio">
+<div class="lab">
+<svg><use href="#i-bolt"></use></svg>
+<span>Studio</span>
+</div>
+</button>
+<button aria-label="Social" data-screen="social">
+<div class="lab">
+<svg viewbox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h10V4H7Zm5 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="currentColor"></path></svg>
+<span>Social</span>
+</div>
+</button>
+<button aria-label="Stagione" data-screen="season">
+<div class="lab">
+<svg viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5.55 3.84 10.74 8 11 4.16-.26 8-5.45 8-11V5l-8-3Zm0 2.18L18 6.1v4.9c0 4.46-2.9 8.76-6 9.02-3.1-.26-6-4.56-6-9.02V6.1l6-1.92Z" fill="currentColor"></path></svg>
+<span>Stagione</span>
+</div>
+</button>
+<button aria-label="Negozio" data-screen="shop">
+<div class="lab">
+<svg><use href="#i-shop"></use></svg>
+<span>Shop</span>
+</div>
+</button>
+<button aria-label="Impostazioni" class="nav-btn" id="navSettingsBtn" title="Impostazioni" type="button">⚙️</button></nav>
+</div>
+<!-- ONBOARDING: PROFILO + AVATAR -->
+<div class="overlay" id="onboardingOverlay">
+<div class="overlay-card" style="max-width:760px;">
+<div class="overlay-header">
+<div class="overlay-title">Crea il tuo profilo</div>
+<button class="overlay-close" id="onboardingSkipBtn" title="Salta (usa default)">✕</button>
+</div>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; align-items:start; justify-content:center;">
+<!-- FORM -->
+<div class="sp-card" style="margin:0;">
+<div style="font-weight:800; margin-bottom:8px;">Dati</div>
+<div class="overlay-row">
+<label style="font-size:.78rem;">Nome</label>
+<input id="obFirstName" placeholder="Es. Simone" type="text"/>
+</div>
+<div class="overlay-row">
+<label style="font-size:.78rem;">Cognome</label>
+<input id="obLastName" placeholder="Es. Tammaro" type="text"/>
+</div>
+<div class="overlay-row">
+<label style="font-size:.78rem;">Data di nascita</label>
+<input id="obDob" placeholder="Es. 12/12/2005" type="text"/>
+</div>
+<div class="overlay-row">
+<label style="font-size:.78rem;">Nome artista (soprannome)</label>
+<input id="obStageName" placeholder="Es. Lil Simone" type="text"/>
+</div>
+<div class="overlay-row">
+<label style="font-size:.78rem;">Foto faccia (opzionale)</label>
+<input accept="image/*" id="obFaceFile" type="file"/>
+<div style="color:var(--muted); font-size:.76rem; margin-top:4px;">
+            Se carichi una foto, la mettiamo sopra la faccia dell’avatar.
+          </div>
+</div>
+</div>
+<!-- AVATAR BUILDER -->
+<div class="sp-card" style="margin:0;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+<div style="font-weight:800;">Avatar</div>
+<button class="ghost" id="obRandomizeBtn" type="button">🎲 Random</button>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<!-- PREVIEW -->
+<div style="width:220px; flex:0 0 auto;">
+<div id="avatarPreview" style="width:220px; height:260px; border-radius:18px; border:1px solid rgba(51,65,85,.85); background: rgba(2,6,23,0.35); position:relative; overflow:hidden;"></div>
+<div style="color:var(--muted); font-size:.76rem; margin-top:6px;">
+              Anteprima live. La foto (se caricata) si sovrappone al volto.
+            </div>
+</div>
+<!-- OPTIONS -->
+<div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:8px;">
+<select id="obBodyTone">
+<option value="tone1">Tono pelle 1</option>
+<option value="tone2">Tono pelle 2</option>
+<option value="tone3">Tono pelle 3</option>
+<option value="tone4">Tono pelle 4</option>
+</select>
+<select id="obHair">
+<option value="hair1">Capelli 1</option>
+<option value="hair2">Capelli 2</option>
+<option value="hair3">Capelli 3</option>
+</select>
+<select id="obTop">
+<option value="top1">Felpa</option>
+<option value="top2">Giubbino</option>
+<option value="top3">T-shirt</option>
+</select>
+<select id="obPants">
+<option value="pants1">Jeans</option>
+<option value="pants2">Tuta</option>
+<option value="pants3">Cargo</option>
+</select>
+<select id="obShoes">
+<option value="shoes1">Sneakers</option>
+<option value="shoes2">High-top</option>
+<option value="shoes3">Boots</option>
+</select>
+<select id="obHat">
+<option value="none">Nessun cappello</option>
+<option value="hat1">Cappellino</option>
+<option value="hat2">Beanie</option>
+</select>
+<select id="obGlasses">
+<option value="none">No occhiali</option>
+<option value="gl1">Occhiali scuri</option>
+<option value="gl2">Montatura</option>
+</select>
+<select id="obChain">
+<option value="none">No collana</option>
+<option value="ch1">Collana gold</option>
+<option value="ch2">Collana silver</option>
+</select>
+<select id="obWatch">
+<option value="none">No orologio</option>
+<option value="w1">Orologio</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay-actions" style="margin-top:12px;">
+<button class="secondary" id="onboardingCancelBtn" style="flex:1;">Usa default</button>
+<button id="onboardingSaveBtn" style="flex:1;">Entra nel gioco</button>
+</div>
+</div>
+</div>
+<div class="app">
+<header>
+<div>
+<div class="title">RapRise • Simone Officiale</div>
+<div class="subtitle">Gestisci la tua carriera, un giorno alla volta</div>
+</div>
+<div class="pill">
+<div class="pill-dot"></div>
+<div aria-label="Progresso livello" class="pill-xp">
+<div class="pill-xp-top">
+<span class="lvl" id="levelLabel">Lv. 1</span>
+<span class="xp" id="xpLabel">0 / 140 XP</span>
+</div>
+<div aria-hidden="true" class="xpbar"><i id="xpBarFill"></i></div>
+</div>
+</div>
+</header>
+<div class="hub-grid">
+<div class="hub-left">
+<!-- =========================
+     STEP14: Clash-like Home Hub
+     ========================= -->
+<!-- =========================
+     STEP5: Season Pass (Clash-like)
+     ========================= -->
+</div>
+<div class="hub-right">
+<section class="card">
+<div class="actions">
+<button class="cta-main" id="publishBtn">🔥 Pubblica singolo</button>
+<button class="secondary chest-btn secondaryish" id="openChestBtn">🎁 Apri cassa</button>
+<button class="secondary" id="openShopBtn">🛒 Negozio</button>
+<button class="secondary" id="albumBtn">📀 Crea album</button>
+<button class="secondary" id="barsBtn">✍️ Scrivi barre</button>
+<button class="secondary" id="liveBtn">🎤 Live in locale</button>
+<button class="secondary" id="tourBtn">🌍 Tour</button>
+<button class="ghost" id="resetGameBtn" style="border:1px solid rgba(248,113,113,.6); color:#f87171;">
+  Ripristina partita
+</button>
+</div>
+<div class="nav-tabs">
+<div class="nav-tab active" data-tab="home">Home</div>
+<div class="nav-tab" data-tab="rivals">Rivali &amp; Chart</div>
+<div class="nav-tab" data-tab="fanclub">Fan Club</div>
+</div>
+<div class="tab-section" id="tab-home">
+<strong>Consiglio manager:</strong>
+<span id="managerTip">Pubblica un singolo entro pochi giorni per farti notare.</span>
+</div>
+<div class="tab-section" id="tab-rivals" style="display:none;">
+<div><strong>Classifica stile Spotify</strong> (Top Global)</div>
+<div class="chart-list" id="chartList"></div>
+</div>
+<div class="tab-section" id="tab-fanclub" style="display:none;">
+        Il fan club cresce con singoli, live, tour e feat.<br/>
+        Più li rendi felici, più è facile riempire i locali.
+      </div>
+</section>
+<section class="feed-card">
+<div class="feed-header">
+<div class="feed-title">Feed Social</div>
+<div id="feedCounter">0 post</div>
+</div>
+<div id="feedList"></div>
+</section>
+</div>
+</div>
+</div>
+<!-- Overlay composizione singolo -->
+<!-- Overlay ALBUM (PRO) -->
+<div class="overlay hidden" id="albumOverlay">
+<div class="overlay-card" style="max-width:820px;">
+<div class="overlay-header">
+<div class="overlay-title">Nuovo Album (PRO)</div>
+<button class="overlay-close" id="albumCloseBtn">✕</button>
+</div>
+<div class="sp-card" style="margin-top:6px;">
+<div style="display:grid; grid-template-columns: 1.2fr 1fr 1fr; gap:10px; align-items:end;">
+<div>
+<label style="font-size:.78rem;">Titolo album</label>
+<input id="albumTitleInput" placeholder="Es. Vicoli &amp; Sogni" type="text"/>
+</div>
+<div>
+<label style="font-size:.78rem;">Tipo</label>
+<select id="albumTypeSelect">
+<option value="mixtape">Mixtape (più grezzo)</option>
+<option value="studio">Studio Album (più curato)</option>
+<option value="ep">EP (corto ma forte)</option>
+</select>
+</div>
+<div>
+<label style="font-size:.78rem;">Sblocco</label>
+<div class="chip" style="margin-top:6px;">
+<div class="dot"></div>
+<span id="albumGateLabel">Serve Lv. 6</span>
+</div>
+</div>
+</div>
+<div style="margin-top:10px; color:var(--muted); font-size:.78rem;">
+        PRO: aggiungi tracce, scegli feat diversi, scrivi testo per ottenere bonus. L’ordine delle tracce è quello della lista.
+      </div>
+</div>
+<div class="sp-card" style="margin-top:10px;">
+<div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+<div style="font-weight:900;">Tracklist</div>
+<div style="display:flex; gap:8px; align-items:center;">
+<button class="ghost" id="albumAddTrackBtn" type="button">+ Aggiungi traccia</button>
+<button class="ghost" id="albumAddBulkBtn" type="button">+4 tracce</button>
+</div>
+</div>
+<div id="albumTracksList" style="margin-top:10px; display:flex; flex-direction:column; gap:10px;"></div>
+<div style="margin-top:10px; display:flex; justify-content:space-between; gap:10px; align-items:center; flex-wrap:wrap;">
+<div class="chip">
+<div class="dot"></div>
+<span id="albumCostLabel">Costo stimato: $ 0</span>
+</div>
+<div class="chip" style="border-color:rgba(29,185,84,.55);">
+<div class="dot" style="background:var(--spotify)"></div>
+<span id="albumHintLabel">Suggerimento: 8-12 tracce è “album vero”.</span>
+</div>
+</div>
+</div>
+<div class="overlay-actions" style="margin-top:12px;">
+<button class="secondary" id="albumCancelBtn" style="flex:1;">Annulla</button>
+<button id="albumPublishBtn" style="flex:1;">Pubblica Album</button>
+</div>
+</div>
+</div>
+<!-- Overlay Tour -->
+<div class="overlay hidden" id="tourOverlay">
+<div class="overlay-card">
+<div class="overlay-header">
+<div class="overlay-title">Organizza un tour</div>
+<button class="overlay-close" id="tourCloseBtn">✕</button>
+</div>
+<div class="overlay-row"><span>Scegli il tipo di tour:</span></div>
+<div class="overlay-actions">
+<button class="ghost" id="tourLocalBtn">🏙️ Locale</button>
+<button class="ghost" id="tourEuBtn">🌍 Europa</button>
+<button class="ghost" id="tourWorldBtn">🌐 Mondiale</button>
+</div>
+<div style="margin-top:6px;font-size:0.76rem;color:var(--muted);">
+        Più il tour è grande, più costa, ma puoi guadagnare un'esplosione di fan e soldi.
+      </div>
+</div>
+</div>
+<!-- PHONE -->
+<button class="phone-fab" id="phoneBtn" title="Telefono">📱</button>
+<div class="toast" id="toast"></div>
+<!-- =========================
+     STEP3: Tutorial Overlay
+     ========================= -->
+<div aria-hidden="true" class="tut-overlay" id="tutOverlay">
+<div class="tut-hole" id="tutHole"></div>
+<div aria-modal="true" class="tut-card" id="tutCard" role="dialog">
+<div class="tut-kicker">
+<div><b>Guida rapida</b> · stile Clash</div>
+<div class="tut-progress" id="tutProgress">1/1</div>
+</div>
+<h3 id="tutTitle">Titolo</h3>
+<p id="tutText">Testo</p>
+<div class="tut-actions" id="tutActions"></div>
+</div>
+</div>
+<!-- =========================
+     STEP5: Reward Overlay (Season/Chest)
+     ========================= -->
+<div class="overlay hidden" id="rewardOverlay">
+<div class="overlay-card" style="max-width:560px;">
+<div class="overlay-header">
+<div class="overlay-title" id="rewardTitle">Ricompense</div>
+<button class="overlay-close" id="rewardCloseBtn">✕</button>
+</div>
+<div id="rewardDesc" style="color:var(--muted); font-size:.82rem;">
+      Hai sbloccato una ricompensa.
+    </div>
+<div class="reward-grid" id="rewardGrid"></div>
+<div class="overlay-actions" style="margin-top:12px;">
+<button class="secondary" id="rewardLaterBtn" style="flex:1;">Dopo</button>
+<button id="rewardClaimBtn" style="flex:1;">Riscatta</button>
+</div>
+</div>
+</div>
+<!-- =========================
+     STEP6: Milestone Banner
+     ========================= -->
+<div aria-live="polite" class="banner" id="milestoneBanner">
+<div class="row">
+<div style="min-width:0;">
+<div class="title" id="bannerTitle">Sblocco!</div>
+<div class="desc" id="bannerDesc">Hai ottenuto qualcosa.</div>
+</div>
+<div class="rarity-tag r-rare" id="bannerTag"><span class="rarity-dot"></span>RARE</div>
+</div>
+</div>
+<!-- =========================
+     STEP15: Settings (Audio/FX)
+     ========================= -->
+<div class="settings-btn">
+<button aria-label="Impostazioni" class="icon-btn" id="openSettingsBtn">
+<svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18">
+<path d="M19.14,12.94a7.43,7.43,0,0,0,.05-.94,7.43,7.43,0,0,0-.05-.94l2.11-1.65a.5.5,0,0,0,.12-.63l-2-3.46a.5.5,0,0,0-.6-.22l-2.49,1a7.28,7.28,0,0,0-1.63-.94l-.38-2.65A.5.5,0,0,0,13.8,1H10.2a.5.5,0,0,0-.49.42L9.33,4.07a7.28,7.28,0,0,0-1.63.94l-2.49-1a.5.5,0,0,0-.6.22l-2,3.46a.5.5,0,0,0,.12.63L4.86,11.06a7.43,7.43,0,0,0-.05.94,7.43,7.43,0,0,0,.05.94L2.75,14.59a.5.5,0,0,0-.12.63l2,3.46a.5.5,0,0,0,.6.22l2.49-1a7.28,7.28,0,0,0,1.63.94l.38,2.65A.5.5,0,0,0,10.2,23h3.6a.5.5,0,0,0,.49-.42l.38-2.65a7.28,7.28,0,0,0,1.63-.94l2.49,1a.5.5,0,0,0,.6-.22l2-3.46a.5.5,0,0,0-.12-.63ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" fill="currentColor"></path>
+</svg>
+</button>
+</div>
+<div class="fx-ping" id="fxPing"></div>
+<!-- =========================
+     STEP17: Notifications bell
+     ========================= -->
+<div class="notif-bell">
+<button aria-label="Notifiche" class="icon-btn" id="openNotifBtn" style="position:relative;">
+<svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18">
+<path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2Zm6-6V11a6 6 0 0 0-5-5.91V4a1 1 0 0 0-2 0v1.09A6 6 0 0 0 6 11v5l-2 2v1h16v-1l-2-2Z" fill="currentColor"></path>
+</svg>
+<div class="badge" id="notifBadge" style="display:none;">0</div>
+</button>
+</div>
+<div id="overlayRoot">
+<!-- =========================
+     STEP32: In-game Settings Panel
+     ========================= -->
+<div class="hidden" id="settingsModal" style="position:fixed; inset:0; z-index:9300; background:rgba(0,0,0,.58); padding:14px;">
+<div class="ui-card" style="max-width:860px; margin:0 auto; height: calc(100vh - 28px); overflow:auto; border-radius:24px; padding:14px;">
+<div class="u-row u-between u-gap-2">
+<div>
+<div style="font-weight:950; letter-spacing:.2px; font-size:1.06rem;">Impostazioni</div>
+<div style="color:rgba(222,228,240,.86); font-size:.84rem; margin-top:4px; line-height:1.2;">
+          Controllo prestazioni, stabilita e installazione PWA.
+        </div>
+</div>
+<button class="btn btn-secondary" data-close="" id="settingsCloseBtn" style="min-width:120px;">Chiudi</button>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>Modalita</b>
+<span class="chip"><i></i>CORE</span>
+</div>
+<div class="u-row u-gap-2 u-mt-3" style="flex-wrap:wrap;">
+<button class="btn btn-primary" id="togglePerfBtn">Perf Mode</button>
+<button class="btn btn-secondary" id="toggleSafeBtn">Safe Mode</button>
+<button class="btn btn-secondary" id="runQaBtn">Apri QA Console</button>
+</div>
+<div id="settingsHint" style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;"></div>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>Installazione</b>
+<span class="chip"><i></i>PWA</span>
+</div>
+<div style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;">
+        Se il browser supporta l'installazione, comparira il prompt. In alternativa:
+        <ul style="margin:8px 0 0 18px;">
+<li>Android/Chrome: Menu -&gt; Installa app</li>
+<li>iOS/Safari: Condividi -&gt; Aggiungi a schermata Home</li>
+</ul>
+</div>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>Salvataggi</b>
+<span class="chip"><i></i>DATA</span>
+</div>
+<div class="u-row u-gap-2 u-mt-3" style="flex-wrap:wrap;">
+<button class="btn btn-secondary" id="exportSaveBtn">Export</button>
+<button class="btn btn-secondary" id="restoreBackupBtn">Ripristina backup</button>
+<button class="btn btn-secondary" id="hardReloadBtn">Ricarica</button>
+</div>
+<div style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;">
+        Export copia il token negli appunti (se disponibile). Ripristina backup usa l'ultimo snapshot salvato.
+      </div>
+</div>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>Info &amp; Versione</b>
+<span class="chip"><i></i>BUILD</span>
+</div>
+<div style="margin-top:10px; display:grid; grid-template-columns: 1fr; gap:8px;">
+<div class="u-row u-between u-gap-2">
+<span>Build</span>
+<span class="chip" id="aboutBuildId"><i></i>?</span>
+</div>
+<div class="u-row u-between u-gap-2">
+<span>Service Worker</span>
+<span class="chip" id="aboutSw"><i></i>?</span>
+</div>
+<div class="u-row u-between u-gap-2">
+<span>Cache</span>
+<span class="chip" id="aboutCache"><i></i>?</span>
+</div>
+</div>
+<div class="u-row u-gap-2 u-mt-3" style="flex-wrap:wrap;">
+<button class="btn btn-secondary" id="aboutCheckUpdateBtn">Controlla aggiornamenti</button>
+<button class="btn btn-secondary" id="aboutUnregisterSwBtn">Disattiva offline</button>
+</div>
+<div style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;">
+    "Disattiva offline" rimuove il Service Worker e le cache. Utile se un browser resta su una build vecchia.
+  </div>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>Release Notes</b>
+<span class="chip"><i></i>INFO</span>
+</div>
+<div style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;">
+    Cronologia build e cambiamenti principali (utile per debug in produzione).
+  </div>
+<div class="u-row u-gap-2 u-mt-3" style="flex-wrap:wrap;">
+<button class="btn btn-secondary" id="openNotesBtn">Apri Release Notes</button>
+</div>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>Diagnostica</b>
+<span class="chip"><i></i>DEBUG</span>
+</div>
+<div style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;">
+    Genera un pacchetto diagnostico copiabile: build, stato SW, perf marks, ultimi errori e snapshot config.
+  </div>
+<div class="u-row u-gap-2 u-mt-3" style="flex-wrap:wrap;">
+<button class="btn btn-primary" id="diagExportBtn">Copia Diagnostica</button>
+<button class="btn btn-secondary" id="diagClearBtn">Reset log</button>
+</div>
+<div id="diagHint" style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;"></div>
+</div>
+<div class="ui-card" style="margin-top:12px; padding:12px;">
+<div class="u-row u-between u-gap-2">
+<b>What's New</b>
+<span class="chip"><i></i>UPDATE</span>
+</div>
+<div style="margin-top:10px; color:rgba(222,228,240,.86); font-size:.84rem; line-height:1.25;">
+    Mostra le novità dell'ultima build installata e le modifiche recenti.
+  </div>
+<div class="u-row u-gap-2 u-mt-3" style="flex-wrap:wrap;">
+<button class="btn btn-secondary" id="openWhatsNewBtn">Apri What's New</button>
+</div>
+</div>
+</div>
+</div>
+<!-- =========================
+     STEP24: QA Panel (toggle with Ctrl+Shift+D)
+     ========================= -->
+<div aria-hidden="true" id="qaPanel">
+<div class="qa-head">
+<div style="min-width:0;">
+<div class="t">QA Console</div>
+<div class="s">Ctrl+Shift+D per aprire/chiudere. Smoke tests, errori JS e long tasks.</div>
+</div>
+<button class="btn btn-secondary" id="qaCloseBtn" style="flex:0;">Chiudi</button>
+</div>
+<div class="qa-actions">
+<button class="btn btn-primary" id="qaRunBtn">Esegui Smoke Tests</button><button class="btn btn-primary" id="qaPreflightBtn">Preflight Gate</button><button class="btn btn-primary" id="qaRegBtn">Regression Suite</button>
+<button class="btn btn-secondary" id="qaClearBtn">Pulisci log</button>
+<button class="btn btn-secondary" id="qaReleaseBtn" title="Si abilita solo se Preflight passa">Enable Release Mode</button></div>
+<div class="qa-grid">
+<div class="qa-card">
+<div class="qa-row">
+<b>Stato</b>
+<span class="pill-warn" id="qaStatus">In attesa</span>
+</div>
+<div class="qa-row" style="margin-top:8px;">
+<span>Schermata attiva</span>
+<span class="chip" id="qaActiveScreen"><i></i>?</span>
+</div>
+<div class="qa-row" style="margin-top:8px;">
+<span>Errori JS catturati</span>
+<span class="chip" id="qaErrCount"><i></i>0</span>
+</div>
+<div class="qa-row" style="margin-top:8px;">
+<span>Long tasks (&gt;=50ms)</span>
+<span class="chip" id="qaLongCount"><i></i>0</span>
+</div>
+</div>
+<div class="qa-card">
+<div class="qa-row">
+<b>Risultati</b>
+<span class="chip" id="qaPassFail"><i></i>-</span>
+</div>
+<div class="qa-log" id="qaResultsLog">Nessun test eseguito.</div>
+<div class="qa-log" id="qaRegLog" style="margin-top:10px; display:none;"><div class="qa-log" id="qaPreflightLog" style="margin-top:10px; display:none;"></div></div>
+</div>
+<div class="qa-card">
+<div class="qa-row">
+<b>Log errori / eventi</b>
+<span class="chip"><i></i>LIVE</span>
+</div>
+<div class="qa-log" id="qaEventLog"></div>
+</div>
+</div>
+</div>
+<!-- =========================
+     STEP25: Crash Recovery Overlay
+     ========================= -->
+<div aria-hidden="true" id="crashOverlay">
+<div class="card">
+<div class="h">
+<div style="min-width:0;">
+<div class="t">Ripristino rapido</div>
+<div class="s">E' stato rilevato un problema che puo bloccare l'app. Puoi ricaricare, avviare in Safe Mode, o ripristinare l'ultimo backup del salvataggio.</div>
+</div>
+<span class="chip"><i></i>STABILITY</span>
+</div>
+<div class="log" id="crashLog">Dettagli non disponibili.</div>
+<div class="row">
+<button class="btn btn-primary" id="crashReloadBtn">Ricarica</button>
+<button class="btn btn-secondary" id="crashSafeBtn">Safe Mode</button>
+<button class="btn btn-secondary" id="crashRestoreBtn">Ripristina backup</button>
+</div>
+<div class="row">
+<button class="btn btn-secondary" id="crashExportBtn">Export salvataggio</button>
+<button class="btn btn-secondary" id="crashResetUiBtn">Reset UI</button>
+</div>
+</div>
+</div>
+<div class="safe-badge" id="safeBadge"><span>SAFE MODE</span><span class="chip"><i></i>ON</span></div>
+<div class="perf-badge" id="perfBadge"><span>PERF MODE</span><span class="chip"><i></i>ON</span></div>
+<script>// Step 30: Safe Service Worker registration (GitHub Pages friendly)
+(function(){
+  if(!('serviceWorker' in navigator)) return;
+
+  function log(){ /* silent by default */ }
+
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./sw.js').then(function(reg){
+      // If there's an updated worker waiting, activate it immediately.
+      if(reg.waiting){
+        reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+      }
+      reg.addEventListener('updatefound', function(){
+        var nw = reg.installing;
+        if(!nw) return;
+        nw.addEventListener('statechange', function(){
+          if(nw.state === 'installed'){
+            if(navigator.serviceWorker.controller){
+              // New content available, activate as soon as possible.
+              reg.waiting && reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+            }
+          }
+        });
+      });
+    }).catch(function(err){
+      // SW registration failed; app still works normally.
+      console.warn('[RapRise] SW registration failed:', err);
+    });
+  });
+
+  // Reload once when a new SW takes control (to apply fresh assets)
+  var refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', function(){
+    if(refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+})();</script>
+<!-- =========================
+     STEP31: PWA Install Prompt
+     ========================= -->
+<div id="pwaInstallBar" style="position:fixed; left:12px; right:12px; bottom:56px; z-index:8800; display:none;">
+<div class="ui-card" style="padding:12px; border-radius:22px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+<div style="min-width:0;">
+<b style="letter-spacing:.2px;">Installa RapRise</b>
+<div style="color:rgba(222,228,240,.86); font-size:.82rem; line-height:1.2; margin-top:4px;">
+        Avvio piu veloce, modalita app, offline ready.
+      </div>
+</div>
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<button class="btn btn-primary" id="pwaInstallBtn" style="min-width:140px;">Installa</button>
+<button class="btn btn-secondary" id="pwaDismissBtn" style="min-width:120px;">Non ora</button>
+</div>
+</div>
+</div>
+<div class="hidden" id="releaseRibbon" style="position:fixed; top:10px; left:10px; z-index:9999; pointer-events:none;">
+<span class="rr-pill" id="releaseRibbonText">DEV BUILD</span>
+</div>
+
+<div aria-label="What's New" aria-modal="true" class="modal hidden" id="whatsNewModal" role="dialog">
+<div class="modal-backdrop" data-close="1"></div>
+<div class="modal-card" role="document" tabindex="-1">
+<div class="modal-head">
+<div style="min-width:0;">
+<div class="modal-title">What's New</div>
+<div class="modal-sub" id="whatsNewSub">Aggiornamenti e miglioramenti della build corrente.</div>
+</div>
+<button aria-label="Chiudi" class="icon-btn" id="whatsNewCloseBtn">✕</button>
+</div>
+<div class="modal-body" id="whatsNewBody">
+<!-- filled by Step41 -->
+</div>
+<div class="modal-foot">
+<button class="btn btn-secondary" id="whatsNewLaterBtn">Più tardi</button>
+<button class="btn btn-primary" id="whatsNewOkBtn">Ok</button>
+</div>
+</div>
+</div>
+<script crossorigin="anonymous" defer="True" integrity="sha384-ochpanvI8IHmY/iLb47rBsU2Un8qPmpbfEJsnU1rLlwjtnWZbtYtzfB+JXkAHSRv" src="app.148dc7236c.js"></script></body>
+</html>

@@ -1,0 +1,96 @@
+{
+  "name": "RapRise",
+  "short_name": "RapRise",
+  "description": "RapRise - rapper career game (PWA build).",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#f97316",
+  "orientation": "portrait",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "./index.html",
+  "shortcuts": [
+    {
+      "name": "Studio",
+      "short_name": "Studio",
+      "description": "Vai allo Studio",
+      "url": "./index.html#studio",
+      "icons": []
+    },
+    {
+      "name": "Negozio",
+      "short_name": "Shop",
+      "description": "Apri il Negozio",
+      "url": "./index.html#shop",
+      "icons": []
+    },
+    {
+      "name": "Stagione",
+      "short_name": "Season",
+      "description": "Quest e Pass",
+      "url": "./index.html#season",
+      "icons": []
+    }
+  ],
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "prefer_related_applications": false
+}

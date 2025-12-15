@@ -1,0 +1,15 @@
+{
+  "build": "step41",
+  "assets": {
+    "css": {
+      "file": "app.0966e83683.css",
+      "sha256": "0966e83683ba91ab24de471c69f657af745d8edc3c2f6daa1b4b23189eb45e2f",
+      "sri_sha384": "sha384-oVw5oRj5qYzwwngFakhYLd2w5XkDTM04a8Zy8zQMtwBK3M4PrLqoaxB3wF8K8WSC"
+    },
+    "js": {
+      "file": "app.148dc7236c.js",
+      "sha256": "148dc7236c0a8461e86a23a2140a9db12af709692cb4068e9e9c4ecba9bf4e95",
+      "sri_sha384": "sha384-ochpanvI8IHmY/iLb47rBsU2Un8qPmpbfEJsnU1rLlwjtnWZbtYtzfB+JXkAHSRv"
+    }
+  }
+}

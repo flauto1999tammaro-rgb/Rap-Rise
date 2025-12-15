@@ -1,0 +1,80 @@
+{
+  "product": "RapRise",
+  "schema_version": 2,
+  "build_notes": [
+    {
+      "build": "step41",
+      "date": "2025-12-15",
+      "highlights": [
+        "Shipping polish: What's New modal post-update (build-aware) via release-notes.json",
+        "Performance instrumentation: LCP/CLS/INP best-effort + marks (RapRisePerf)",
+        "Idle init: defer non-critical rerenders to reduce long tasks",
+        "Settings: button to open What's New anytime"
+      ]
+    },
+    {
+      "build": "step40",
+      "date": "2025-12-15",
+      "highlights": [
+        "Preflight Gate: checklist automatizzata in QA (router, overlay, buttons, save, SW, error delta)",
+        "Release Mode lock: abilita 'Release Mode' solo se Preflight passa",
+        "Ribbon stato build: DEV / PRE-FLIGHT FAIL / RELEASE READY / RELEASE MODE",
+        "SW hardening: supporto a messaggio SKIP_WAITING (se assente)"
+      ]
+    },
+    {
+      "build": "step39",
+      "date": "2025-12-15",
+      "highlights": [
+        "UI consistency: tokens, tipografia, componenti riutilizzabili",
+        "Normalizzazione di card/list/kpi/input/button",
+        "Pass DOM non invasivo che uniforma i moduli esistenti"
+      ]
+    },
+    {
+      "build": "step38",
+      "date": "2025-12-15",
+      "highlights": [
+        "Visual upgrade: transizioni tra schermate + micro-animazioni su card e button",
+        "Skeleton loaders (Notes) per percezione di velocita",
+        "Motion gating: riduce animazioni con prefers-reduced-motion o Perf Mode"
+      ]
+    },
+    {
+      "build": "step37",
+      "date": "2025-12-15",
+      "highlights": [
+        "Content pass: tutte le schermate piene e coerenti",
+        "Studio: Song Lab + bozze + release track",
+        "Social: feed + metriche + post/collab",
+        "Season: quest + pass progress + milestone",
+        "Shop: daily deals + wallet + free reward"
+      ]
+    },
+    {
+      "build": "step34",
+      "date": "2025-12-15",
+      "highlights": [
+        "Save migration + schema versioning",
+        "Backup guardrails (auto snapshot before migrate)",
+        "Release Notes screen in-game",
+        "Import/export validation improvements"
+      ]
+    },
+    {
+      "build": "step33",
+      "date": "2025-12-15",
+      "highlights": [
+        "iOS splash screens + About/Version in Settings",
+        "Service Worker update controls"
+      ]
+    },
+    {
+      "build": "step30",
+      "date": "2025-12-15",
+      "highlights": [
+        "Offline-ready caching with safe Service Worker"
+      ]
+    }
+  ]
+}
