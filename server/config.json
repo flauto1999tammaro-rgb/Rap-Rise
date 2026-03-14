@@ -1,0 +1,16 @@
+{
+  "sqlitePath": "./data/gtfs.sqlite",
+  "ignoreDuplicates": true,
+  "ignoreErrors": true,
+  "downloadTimeout": 60000,
+  "agencies": [
+    {
+      "url": "https://www.anm.it/google/google-transit.zip",
+      "prefix": "anm_"
+    },
+    {
+      "url": "https://www.wimob.it/cfile/download.php?file=google-transit.zip",
+      "prefix": "eav_"
+    }
+  ]
+}

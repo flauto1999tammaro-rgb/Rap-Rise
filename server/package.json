@@ -1,0 +1,20 @@
+{
+  "name": "napoli-transit-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:prod": "node src/index.js",
+    "dev": "node src/index.js",
+    "gtfs:import": "node src/import-gtfs.js",
+    "start:otp": "powershell -ExecutionPolicy Bypass -File .\\start-backend-with-otp.ps1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "gtfs": "^4.18.3"
+  }
+}

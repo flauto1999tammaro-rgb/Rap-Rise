@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: napoli-transit-backend
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm run start:prod
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://your-netlify-site.netlify.app
+      - key: OTP_BASE_URL
+        value: ""
